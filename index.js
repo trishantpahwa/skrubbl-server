@@ -29,8 +29,8 @@ app.get('/connection', (req, res) => {
     } else return res.status(422);
 });
 
-server.listen(8002, '0.0.0.0', () => {
-    console.log('Listening on 8002');
+server.listen(3000, '0.0.0.0', () => {
+    console.log('Listening on 3000');
 });
 
 var connections;
