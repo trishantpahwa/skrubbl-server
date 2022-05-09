@@ -29,7 +29,7 @@ app.get('/connection', (req, res) => {
     } else return res.status(422);
 });
 
-server.listen(process.env.port ?? 5000, () => {
+server.listen(process.env.port ?? 5000, 'localhost', () => {
     console.log(`Listening on ${process.env.port ?? 5000}`);
 });
 
