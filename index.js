@@ -29,8 +29,8 @@ app.get('/connection', (req, res) => {
     } else return res.status(422);
 });
 
-server.listen(3000, '0.0.0.0', () => {
-    console.log('Listening on 3000');
+server.listen(process.env.port, '0.0.0.0', () => {
+    console.log(`Listening on ${process.env.port}`);
 });
 
 var connections;
